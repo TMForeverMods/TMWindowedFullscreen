@@ -22,9 +22,9 @@ a single 32-bit DLL, usable two ways:
 * **Respects a smaller resolution.** If the game is set below the monitor's
   resolution (e.g. 720p on a 1440p monitor) it is left exactly as it is — the mod
   does not stretch or resize that window. The choice survives Alt+Enter toggles.
-* **If the game is on full resolution and you press Alt+Ent instead of moving the cursor
-  or pressing the Win key, the game will be resized to a smaller window. You can
-  resize the window to any size.
+* **If the game is on full resolution and you press Alt+Enter instead of moving the
+  cursor or pressing the Win key, the game will be resized to a smaller window.**
+  You can resize the window to any size.
 * **Always on, no configuration.** There is no dedicated hotkey. To stop using
   it, unload the mod (see [Uninstall](#uninstall)).
 
@@ -74,8 +74,10 @@ and recompile to enable it; `TMWindowedFullscreen.log` is then written next to
 the installed DLL.
 
 If you have placed the DLL beside the TmForever.exe, the path of the log might be:
-C:\Users\USER\AppData\Local\VirtualStore\Program Files (x86)\TmUnitedForever
-C:\Users\USER\AppData\Local\VirtualStore\Program Files (x86)\TmNationsForever
+
+* `C:\Users\USER\AppData\Local\VirtualStore\Program Files (x86)\TmUnitedForever`
+* `C:\Users\USER\AppData\Local\VirtualStore\Program Files (x86)\TmNationsForever`
+
 -> This is some kind of symlink in simplified terms
 
 Useful lines:
@@ -238,11 +240,11 @@ rejected by `CMakeLists.txt`.
 
 ## Credits
 
-https://github.com/cheatoskar/TM-Vibrant-Shaders - for implementing a single DLL that supports Mod Loader and the standalone method by proxying Direct3D9 calls
-https://tomashu.dev/software/tmloader/ for The Mod Loader. An OpenMod might be built by me, as I don't like closed-source software that is embedded in .exe files
+* https://github.com/cheatoskar/TM-Vibrant-Shaders - for implementing a single DLL that supports Mod Loader and the standalone method by proxying Direct3D9 calls
+* https://tomashu.dev/software/tmloader/ for The Mod Loader. An OpenMod might be built by me, as I don't like closed-source software that is embedded in .exe files
 
 Shoutout to the following projects that helped me out for another project of mine:
 
-https://github.com/pixeltris/ModTMNF for the dumps of TMNF and it's capability to interact with TrackMania on a low level
-https://github.com/BigBang1112/gbx-net - for the inner working of GBX files
-https://explorer.gbx.tools/ and it's built-in IDE
+* https://github.com/pixeltris/ModTMNF for the dumps of TMNF and it's capability to interact with TrackMania on a low level
+* https://github.com/BigBang1112/gbx-net - for the inner working of GBX files
+* https://explorer.gbx.tools/ and it's built-in IDE
