@@ -1,0 +1,22 @@
+; Standalone mode: when this DLL is placed in the game folder as "d3d9.dll" these
+; exports are forwarded to the real system d3d9.dll (see proxy.cpp). The game only
+; imports Direct3DCreate9 and D3DPERF_SetOptions, the rest are exported so that
+; other modules in the process keep working.
+EXPORTS
+    Direct3DCreate9=TMWFS_Direct3DCreate9
+    Direct3DCreate9Ex=TMWFS_Direct3DCreate9Ex
+    D3DPERF_BeginEvent=TMWFS_D3DPERF_BeginEvent
+    D3DPERF_EndEvent=TMWFS_D3DPERF_EndEvent
+    D3DPERF_GetStatus=TMWFS_D3DPERF_GetStatus
+    D3DPERF_QueryRepeatFrame=TMWFS_D3DPERF_QueryRepeatFrame
+    D3DPERF_SetMarker=TMWFS_D3DPERF_SetMarker
+    D3DPERF_SetOptions=TMWFS_D3DPERF_SetOptions
+    D3DPERF_SetRegion=TMWFS_D3DPERF_SetRegion
+    DebugSetLevel=TMWFS_DebugSetLevel
+    DebugSetMute=TMWFS_DebugSetMute
+    Direct3D9EnableMaximizedWindowedModeShim=TMWFS_Direct3D9EnableMaximizedWindowedModeShim
+    Direct3DCreate9On12=TMWFS_Direct3DCreate9On12
+    Direct3DCreate9On12Ex=TMWFS_Direct3DCreate9On12Ex
+    Direct3DShaderValidatorCreate9=TMWFS_Direct3DShaderValidatorCreate9
+    PSGPError=TMWFS_PSGPError
+    PSGPSampleTexture=TMWFS_PSGPSampleTexture

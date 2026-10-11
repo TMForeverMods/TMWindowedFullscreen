@@ -1,0 +1,5 @@
+name: TM Windowed Fullscreen
+author: TMForeverMods
+type: modification
+homepage: ''
+description: 'Runs TrackMania Forever (Nations Forever and United Forever) in a borderless "windowed fullscreen" window: resizeable game window, no exclusive fullscreen, no mode change, no configuration. Interact with other windows while the game continues running.'
